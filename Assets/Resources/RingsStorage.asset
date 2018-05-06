@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd0ff43f276848c0973384c43d8ce97b, type: 3}
+  m_Name: RingsStorage
+  m_EditorClassIdentifier: 
+  RingsPrefabs:
+  - {fileID: 114375381486565068, guid: 97531327a46522e4895fee42fb3f5a0a, type: 2}
+  - {fileID: 114625535783936036, guid: 4fcceb0bd9feb404da1c40965b9881bf, type: 2}
+  - {fileID: 114369683656782522, guid: 636cb8567d933894da8be5f426e51ed9, type: 2}
+  - {fileID: 114410043130594034, guid: cbda6d1fc5e347546b13faba69adee3b, type: 2}
