@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 224758000843138128}
   - component: {fileID: 222362030325938324}
   - component: {fileID: 114506490342914134}
+  - component: {fileID: 114672299492895422}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
@@ -375,6 +376,19 @@ MonoBehaviour:
   _outTransition: 0
   _transitionSpeed: 1
   _model: {fileID: 0}
+--- !u!114 &114672299492895422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426231670149294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c177d595aac40a884dc53e949137fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: InfoMessage
+  Mode: 0
 --- !u!114 &114858776956253430
 MonoBehaviour:
   m_ObjectHideFlags: 1

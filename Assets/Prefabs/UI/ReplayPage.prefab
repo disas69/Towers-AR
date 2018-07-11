@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224624787581787574}
   - component: {fileID: 222062932136630194}
   - component: {fileID: 114071222475798608}
+  - component: {fileID: 114725938138569998}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
@@ -124,6 +125,7 @@ GameObject:
   - component: {fileID: 224274923854421150}
   - component: {fileID: 222022875336346168}
   - component: {fileID: 114700036461762768}
+  - component: {fileID: 114244847730920604}
   m_Layer: 5
   m_Name: TapToPlay
   m_TagString: Untagged
@@ -190,6 +192,7 @@ GameObject:
   - component: {fileID: 224850699485763218}
   - component: {fileID: 222581827529909308}
   - component: {fileID: 114272809771190952}
+  - component: {fileID: 114527024538634948}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -354,6 +357,19 @@ MonoBehaviour:
   _movesCountVariable: {fileID: 11400000, guid: 8698b3d43e12168468873aaeb849a948,
     type: 2}
   _onTapEvent: {fileID: 11400000, guid: 69bf7847d97c4434c8284ff47df017a2, type: 2}
+--- !u!114 &114244847730920604
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1366972990640122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c177d595aac40a884dc53e949137fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: TapToPlay
+  Mode: 0
 --- !u!114 &114272809771190952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -441,6 +457,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114527024538634948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1708739232311346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c177d595aac40a884dc53e949137fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: Congratulations
+  Mode: 0
 --- !u!114 &114533948754826926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -565,6 +594,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114725938138569998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053345541391292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c177d595aac40a884dc53e949137fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: MarkerNotFound
+  Mode: 0
 --- !u!114 &114911221254396236
 MonoBehaviour:
   m_ObjectHideFlags: 1

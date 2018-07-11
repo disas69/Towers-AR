@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224617214442930844}
   - component: {fileID: 222326400493953912}
   - component: {fileID: 114674644875183444}
+  - component: {fileID: 114429555270449568}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
@@ -74,6 +75,7 @@ GameObject:
   - component: {fileID: 114949259715102940}
   - component: {fileID: 225401508511176512}
   - component: {fileID: 114285205264453362}
+  - component: {fileID: 114329510173698024}
   m_Layer: 5
   m_Name: WrongMove
   m_TagString: Untagged
@@ -146,6 +148,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetAlphaValue: 1
   _changeSpeed: 1.5
+--- !u!114 &114329510173698024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1541163643809648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c177d595aac40a884dc53e949137fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: WrongMove
+  Mode: 0
+--- !u!114 &114429555270449568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060056813229124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c177d595aac40a884dc53e949137fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: MarkerNotFound
+  Mode: 0
 --- !u!114 &114487926823224764
 MonoBehaviour:
   m_ObjectHideFlags: 1

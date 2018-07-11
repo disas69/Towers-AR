@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 224038684740744814}
   - component: {fileID: 222235387834534674}
   - component: {fileID: 114076275704627252}
+  - component: {fileID: 114870012488030902}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
@@ -190,6 +191,7 @@ GameObject:
   - component: {fileID: 224867695664880210}
   - component: {fileID: 222503643168172350}
   - component: {fileID: 114072407530178886}
+  - component: {fileID: 114369144124337408}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
@@ -622,6 +624,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114369144124337408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1619533637229988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c177d595aac40a884dc53e949137fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: MarkerNotFound
+  Mode: 0
 --- !u!114 &114558697233294772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -730,6 +745,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114870012488030902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1121089138752042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c177d595aac40a884dc53e949137fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: TapToPlay
+  Mode: 0
 --- !u!114 &114995380633962036
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -104,5 +104,9 @@ namespace Framework.UI.Structure.Base
                 gameObject.SetActive(false);
             }
         }
+
+        public virtual void OnDestroy()
+        {
+        }
     }
 }

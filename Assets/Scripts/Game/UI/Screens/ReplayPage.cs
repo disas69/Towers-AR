@@ -1,4 +1,5 @@
 ﻿using Framework.Extensions;
+using Framework.Localization;
 using Framework.UI.Structure.Base.Model;
 using Framework.UI.Structure.Base.View;
 using Framework.Variables;
@@ -37,7 +38,7 @@ namespace Game.UI.Screens
 
             ARMarkerEventTracker.TrackingFound += OnTrackingFound;
 
-            _movesCountMessage.text = string.Format("You made it in {0} moves", _movesCountVariable.Value);
+            _movesCountMessage.text = string.Format(LocalizationManager.GetString("MovesCountMessage"), _movesCountVariable.Value);
             _title.gameObject.SetActive(false);
             _tapMessage.gameObject.SetActive(false);
             _markerMessage.gameObject.SetActive(false);
