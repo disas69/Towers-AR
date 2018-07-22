@@ -13,6 +13,12 @@ namespace Game.Gameplay.RingStructure.Editor
             base.DrawInspector();
 
             EditorGUILayout.LabelField("Rings Prefabs", HeaderStyle);
+            if (GUILayout.Button("Add"))
+            {
+                RecordObject("Rings Storage Change");
+                Target.RingsPrefabs.Add(null);
+            }
+
             var list = serializedObject.FindProperty("RingsPrefabs");
             var count = list.arraySize;
 
@@ -30,7 +36,7 @@ namespace Game.Gameplay.RingStructure.Editor
                                 : "None";
 
                             EditorGUILayout.PropertyField(element, new GUIContent(elementName));
-                            if (GUILayout.Button("Remove", GUILayout.Width(100f)))
+                            if (GUILayout.Button("X", GUILayout.Width(20)))
                             {
                                 RecordObject("Rings Storage Change");
                                 Target.RingsPrefabs.RemoveAt(i);
@@ -41,12 +47,6 @@ namespace Game.Gameplay.RingStructure.Editor
                     }
                 }
                 EditorGUILayout.EndVertical();
-            }
-
-            if (GUILayout.Button("Add"))
-            {
-                RecordObject("Rings Storage Change");
-                Target.RingsPrefabs.Add(null);
             }
         }
     }

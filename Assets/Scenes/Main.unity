@@ -198,7 +198,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-1470
+  m_Name: pb_Mesh-1170
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -385,7 +385,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-1436
+  m_Name: pb_Mesh-1136
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -821,7 +821,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-1504
+  m_Name: pb_Mesh-1204
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -1185,6 +1185,39 @@ MonoBehaviour:
   mImageTargetType: 0
   mWidth: 1
   mHeight: 1
+--- !u!1 &1073883610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1073883611}
+  m_Layer: 5
+  m_Name: Notifications
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1073883611
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1073883610}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1501687955}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1208689541
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1231,7 @@ GameObject:
   - component: {fileID: 1208689545}
   - component: {fileID: 1208689544}
   - component: {fileID: 1208689547}
+  - component: {fileID: 1208689548}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -1336,6 +1370,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1208689548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208689541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a4ab87c265d407d80d36f28e28d950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _localizationStorageAsset: {fileID: 11400000, guid: f88a04c0e7775f44f9606dc1944d7e10,
+    type: 2}
+  _useSystemLanguage: 1
+  _language: 14
 --- !u!1001 &1227683012
 Prefab:
   m_ObjectHideFlags: 0
@@ -1772,7 +1821,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-1424
+  m_Name: pb_Mesh-1124
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -1909,7 +1958,7 @@ GameObject:
   - component: {fileID: 1501687953}
   - component: {fileID: 1501687952}
   - component: {fileID: 1501687956}
-  - component: {fileID: 1501687957}
+  - component: {fileID: 1501687958}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1987,6 +2036,7 @@ RectTransform:
   - {fileID: 5476029}
   - {fileID: 1354535152}
   - {fileID: 1043479273}
+  - {fileID: 1073883611}
   - {fileID: 1692926653}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2010,7 +2060,7 @@ MonoBehaviour:
   _screensMapping: {fileID: 11400000, guid: 557050242307c4149a626193ae6aa17b, type: 2}
   _sceensRoot: {fileID: 1354535152}
   _popupsRoot: {fileID: 1043479273}
---- !u!114 &1501687957
+--- !u!114 &1501687958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2018,13 +2068,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1501687951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94a4ab87c265d407d80d36f28e28d950, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d4137dd4761de14588ae44b829c6d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _localizationStorageAsset: {fileID: 11400000, guid: f88a04c0e7775f44f9606dc1944d7e10,
-    type: 2}
-  _useSystemLanguage: 1
-  _startupLanguage: 14
+  RootTransform: {fileID: 1073883611}
+  Configuration: {fileID: 11400000, guid: e77df5b2f1c12b14790853fd9e7f1a7b, type: 2}
 --- !u!1 &1692926652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,7 +2101,7 @@ RectTransform:
   m_Children:
   - {fileID: 1008909880}
   m_Father: {fileID: 1501687955}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

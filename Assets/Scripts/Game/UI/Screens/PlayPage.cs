@@ -1,4 +1,6 @@
-﻿using Framework.Extensions;
+﻿using Framework.Localization;
+using Framework.UI.Notifications;
+using Framework.UI.Notifications.Model;
 using Framework.UI.Structure.Base.Model;
 using Framework.UI.Structure.Base.View;
 using JetBrains.Annotations;
@@ -8,7 +10,6 @@ namespace Game.UI.Screens
 {
     public class PlayPage : Page<PageModel>
     {
-        [SerializeField] private RectTransform _wrongMoveMessage;
         [SerializeField] private RectTransform _markerMessage;
 
         public override void OnEnter()
@@ -17,8 +18,6 @@ namespace Game.UI.Screens
 
             ARMarkerEventTracker.TrackingFound += OnTrackingFound;
             ARMarkerEventTracker.TrackingLost += OnTrackingLost;
-
-            _wrongMoveMessage.gameObject.SetActive(false);
 
             if (ARMarkerEventTracker.MarkerFound)
             {
@@ -39,13 +38,7 @@ namespace Game.UI.Screens
         [UsedImplicitly]
         public void ShowWrongMoveMessage()
         {
-            if (_wrongMoveMessage.gameObject.activeSelf)
-            {
-                return;
-            }
-            
-            _wrongMoveMessage.gameObject.SetActive(true);
-            this.WaitForSeconds(3f, () => _wrongMoveMessage.gameObject.SetActive(false));
+            NotificationManager.Show(new TextNotification(LocalizationManager.GetString("WrongMove")), 2.5f);
         }
 
         public override void OnExit()
